@@ -1,4 +1,9 @@
+#! /bin/bash
+
 # ubuntu-wily-15.10-amd64-server-20151116.1 (ami-26d5af4c)
+
+set -x
+set -e
 
 sudo apt-get -y update
 sudo apt-get -y install r-base python3-matplotlib libzmq3-dev python3.5-dev texlive-latex-extra texlive-latex-recommended python3-virtualenv
