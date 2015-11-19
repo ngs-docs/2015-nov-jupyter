@@ -20,7 +20,7 @@ cat >>/home/ubuntu/.jupyter/jupyter_notebook_config.py <<EOF
 c = get_config()
 c.NotebookApp.ip = '*'
 c.NotebookApp.open_browser = False
-c.NotebookApp.password = u'sha1:5d813e5d59a7:b4e430cf6dbd1aad04838c6e9cf684f4d76e245c' #davis
+c.NotebookApp.password = u'sha1:5d813e5d59a7:b4e430cf6dbd1aad04838c6e9cf684f4d76e245c'
 c.NotebookApp.port = 8000
 
 EOF
@@ -37,7 +37,7 @@ install.packages(c('rzmq','repr','IRkernel','IRdisplay'),
                            'http://cran.us.r-project.org'))
 EOF
 
-sudo R < install-irkernel.sh
+sudo R --no-save < install-irkernel.sh
 echo 'IRkernel::installspec()' | R --no-save
 
 cd
