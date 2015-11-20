@@ -45,6 +45,7 @@ git clone https://github.com/damianavila/RISE.git
 cd RISE
 python setup.py install
 
+cd
 cat >run-notebook.sh <<EOF
 #! /bin/bash
 . ~ubuntu/env/bin/activate
@@ -52,4 +53,4 @@ jupyter notebook
 EOF
 
 chmod +x run-notebook.sh
-screen -D -m run-notebook.sh
+screen -d -m ./run-notebook.sh
