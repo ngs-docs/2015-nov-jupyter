@@ -12,7 +12,7 @@ cd ~/
 python3 -m virtualenv -p python3.5 env --system-site-packages
 . ~/env/bin/activate
 
-pip3 install -U jupyter jupyter_client ipython
+pip3 install -U jupyter jupyter_client ipython pandas
 
 jupyter notebook --generate-config
 
